@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+      <div>12321</div>
+            <img alt="Vue logo" src="./assets/logo.png">
+   <img alt="Vue logo" src="./assets/logo.png">
+     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -11,12 +14,16 @@ import HelloWorld from './components/HelloWorld.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+  },
+    mounted() {
+
+    }
 }
 </script>
 
 <style>
+    .hello {}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
