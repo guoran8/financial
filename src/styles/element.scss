@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@import "./layout";
+
+@mixin button($size: 14px, $color: #ffffff, $bgColor: #F04752, $padding: 5px, $radius: 5px) {
+  padding: $padding;
+  display: inline-block;
+  border-radius: $radius;
+  border: 1px solid $bgColor;
+  color: $color;
+  text-align: center;
+  line-height: 1;
+  background-color: $bgColor;
+}
+
+@mixin list($direction: column) {
+  @include flex($direction);
+}
+
+@mixin panel($bgColor: #FFFFFF, $margin: 20px 0, $padding:0, $height: 112px, $textPadding: 0 32px, $color: #333333, $fontSize: 32px) {
+  margin: $margin;
+  padding: $padding;
+  background-color: $bgColor;
+  >h4 {
+    padding: $textPadding;
+    height: $height;
+    line-height: $height;
+    font-size: $fontSize;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    color: $color;
+  }
+}
